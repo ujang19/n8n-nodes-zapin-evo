@@ -1,7 +1,7 @@
 {
   "name": "n8n-nodes-evolution-api",
   "version": "1.0.4",
-  "description": "A Evolution API é um hub de canais com foco no WhatsApp",
+  "description": "Evolution API is a channel hub with a focus on WhatsApp",
   "keywords": [
     "n8n-community-node-package"
   ],
