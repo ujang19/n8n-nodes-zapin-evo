@@ -17,7 +17,7 @@ export const integrationsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'What do you want to do',
+		displayName: 'What Do You Want to Do',
 		name: 'resourceForChatwoot',
 		type: 'options',
 		options: [
@@ -200,7 +200,7 @@ export const integrationsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Import Messages from How Many Days to Chatwoot',
+		displayName: 'Import Messages From How Many Days to Chatwoot',
 		name: 'chatwootDaysLimitImportMessages',
 		type: 'number',
 		default: 0,
@@ -273,7 +273,7 @@ export const integrationsFields: INodeProperties[] = [
 	},
 
 	{
-		displayName: 'What do you want to do',
+		displayName: 'What Do You Want to Do',
 		name: 'resourceForTypebot',
 		type: 'options',
 		options: [
@@ -407,11 +407,11 @@ export const integrationsFields: INodeProperties[] = [
 				value: 'equals',
 			},
 			{
-				name: 'Starts with',
+				name: 'Starts With',
 				value: 'startsWith',
 			},
 			{
-				name: 'Ends with',
+				name: 'Ends With',
 				value: 'endsWith',
 			},
 			{
@@ -612,14 +612,12 @@ export const integrationsFields: INodeProperties[] = [
 						name: 'name',
 						type: 'string',
 						default: '',
-						description: 'Variable name',
 					},
 					{
 						displayName: 'Variable Value',
 						name: 'value',
 						type: 'string',
 						default: '',
-						description: 'Variable value',
 					},
 				],
 			},
@@ -681,7 +679,7 @@ export const integrationsFields: INodeProperties[] = [
 	},
 
 	{
-		displayName: 'What do you want to do',
+		displayName: 'What Do You Want to Do',
 		name: 'resourceForEvolutionBot',
 		type: 'options',
 		options: [
@@ -811,11 +809,11 @@ export const integrationsFields: INodeProperties[] = [
 				value: 'equals',
 			},
 			{
-				name: 'Starts with',
+				name: 'Starts With',
 				value: 'startsWith',
 			},
 			{
-				name: 'Ends with',
+				name: 'Ends With',
 				value: 'endsWith',
 			},
 			{
@@ -1030,7 +1028,7 @@ export const integrationsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'What do you want to do',
+		displayName: 'What Do You Want to Do',
 		name: 'resourceForDifyBot',
 		type: 'options',
 		options: [
@@ -1194,11 +1192,11 @@ export const integrationsFields: INodeProperties[] = [
 				value: 'equals',
 			},
 			{
-				name: 'Starts with',
+				name: 'Starts With',
 				value: 'startsWith',
 			},
 			{
-				name: 'Ends with',
+				name: 'Ends With',
 				value: 'endsWith',
 			},
 			{
@@ -1411,7 +1409,7 @@ export const integrationsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'What do you want to do',
+		displayName: 'What Do You Want to Do',
 		name: 'resourceForFlowiseBot',
 		type: 'options',
 		options: [
@@ -1541,11 +1539,11 @@ export const integrationsFields: INodeProperties[] = [
 				value: 'equals',
 			},
 			{
-				name: 'Starts with',
+				name: 'Starts With',
 				value: 'startsWith',
 			},
 			{
-				name: 'Ends with',
+				name: 'Ends With',
 				value: 'endsWith',
 			},
 			{
