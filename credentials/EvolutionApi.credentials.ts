@@ -13,10 +13,10 @@ export class EvolutionApi implements ICredentialType {
 		{
 			displayName: 'Server Url',
 			name: 'server-url',
-			type: 'string',
-			default: '',
-			placeholder: 'https://example.com',
-                       description: 'Enter the full URL of your Zapin EVO (e.g., https://api.example.com)',
+                       type: 'string',
+                       default: 'https://api.zapin.tech',
+                       placeholder: 'https://api.zapin.tech',
+                       description: 'Enter the full URL of your Zapin EVO (e.g., https://api.zapin.tech)',
 		},
 		{
 			displayName: 'ApiKey',
