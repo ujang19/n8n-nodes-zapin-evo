@@ -10,7 +10,7 @@ import { resourceOperationsFunctions } from './execute';
 
 export class EvolutionApi implements INodeType {
 	description: INodeTypeDescription = {
-               displayName: 'Zapin EVO',
+               displayName: 'Zapin EVO API',
 		name: 'evolutionApi',
 		icon: 'file:evolutionapi.svg',
 		group: ['transform'],
