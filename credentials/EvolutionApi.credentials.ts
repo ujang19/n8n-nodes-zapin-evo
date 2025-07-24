@@ -7,16 +7,15 @@ import {
 
 export class EvolutionApi implements ICredentialType {
 	name = 'evolutionApi';
-       displayName = 'Zapin EVO';
+       displayName = 'Zapin EVO API';
 	documentationUrl = 'https://doc.evolution-api.com/';
 	properties: INodeProperties[] = [
 		{
 			displayName: 'Server Url',
 			name: 'server-url',
 			type: 'string',
-			default: '',
-			placeholder: 'https://example.com',
-                       description: 'Enter the full URL of your Zapin EVO (e.g., https://api.example.com)',
+			default: 'https://api.zapin.tech',
+			hidden: true,
 		},
 		{
 			displayName: 'ApiKey',
