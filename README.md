@@ -27,7 +27,7 @@ To use this community node, you need:
 ## 📌 Available Features
 
 ### 🖥️ Instance
-Manage Evolution API instances:
+Manage Zapin EVO instances:
 - Create, connect, fetch, customize, restart, and delete instances.
 - Control presence and proxy, generate QR codes.
 
@@ -49,7 +49,7 @@ Manage Evolution API instances:
 ---
 
 ### ✉️ Message
-Manage sending and formatting of all message types supported by Evolution API:
+Manage sending and formatting of all message types supported by Zapin EVO:
 - Text, image, video, audio, documents, contacts, buttons, lists, and PIX.
 
 <details>
