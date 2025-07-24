@@ -35,8 +35,8 @@ export async function fetchGroups(ef: IExecuteFunctions) {
 				const getParticipants = ef.getNodeParameter('getParticipants', 0) as boolean;
 				requestOptions = {
 					method: 'GET' as IHttpRequestMethods,
-						uri: `/group/fetchAllGroups/${instanceName}?getParticipants=${getParticipants}`,
-						json: true,
+					uri: `/group/fetchAllGroups/${instanceName}?getParticipants=${getParticipants}`,
+					json: true,
 				};
 				break;
 

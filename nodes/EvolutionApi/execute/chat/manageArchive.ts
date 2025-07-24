@@ -19,8 +19,8 @@ export async function manageArchive(ef: IExecuteFunctions) {
 				key: {
 					remoteJid: chat,
 					fromMe,
-					id: messageId
-				}
+					id: messageId,
+				},
 			},
 			chat,
 			archive,

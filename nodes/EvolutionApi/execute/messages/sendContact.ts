@@ -39,7 +39,7 @@ export async function sendContact(ef: IExecuteFunctions) {
 
 		const body: any = {
 			number: remoteJid,
-			contact: contacts.map(contact => ({
+			contact: contacts.map((contact) => ({
 				fullName: contact.fullName,
 				wuid: contact.wuid,
 				phoneNumber: contact.phoneNumber,

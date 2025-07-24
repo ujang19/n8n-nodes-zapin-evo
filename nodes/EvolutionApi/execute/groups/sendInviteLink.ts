@@ -13,7 +13,7 @@ export async function sendInviteLink(ef: IExecuteFunctions) {
 		const description = ef.getNodeParameter('description', 0) as string;
 		const numbersString = ef.getNodeParameter('numbers', 0) as string;
 
-		const numbers = numbersString.split(',').map(number => number.trim());
+		const numbers = numbersString.split(',').map((number) => number.trim());
 
 		const body = {
 			groupJid,

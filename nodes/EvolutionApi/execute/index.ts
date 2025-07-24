@@ -97,14 +97,14 @@ export const resourceOperationsFunctions: ResourceOperationFunctions = {
 		'send-reaction': sendReaction,
 	},
 	'events-api': {
-		'webhook': setWebhook,
-		'rabbitmq': setRabbitMQ,
+		webhook: setWebhook,
+		rabbitmq: setRabbitMQ,
 	},
 	'integrations-api': {
-		'chatwoot': setChatwoot,
-		'typebot': setTypebot,
+		chatwoot: setChatwoot,
+		typebot: setTypebot,
 		'evolution-bot': setEvolutionBot,
-		'difyBot': setDifyBot,
+		difyBot: setDifyBot,
 		'flowise-bot': setFlowiseBot,
 	},
 	'groups-api': {

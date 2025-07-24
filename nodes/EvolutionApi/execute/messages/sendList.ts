@@ -65,14 +65,14 @@ export async function sendList(ef: IExecuteFunctions) {
 			description,
 			buttonText,
 			footerText: options.footer || '',
-			sections: sections.map(section => ({
+			sections: sections.map((section) => ({
 				title: section.title,
-				rows: section.rows.rowValues.map(row => ({
+				rows: section.rows.rowValues.map((row) => ({
 					title: row.title,
 					description: row.description || '',
-					rowId: row.rowId || `${section.title}_${row.title}`
-				}))
-			}))
+					rowId: row.rowId || `${section.title}_${row.title}`,
+				})),
+			})),
 		};
 
 		if (options.delay) body.delay = options.delay;
@@ -93,8 +93,8 @@ export async function sendList(ef: IExecuteFunctions) {
 			} else if (mentioned) {
 				const mentionedNumbers = mentioned
 					.split(',')
-					.map(num => num.trim())
-					.map(num => num.includes('@s.whatsapp.net') ? num : `${num}@s.whatsapp.net`);
+					.map((num) => num.trim())
+					.map((num) => (num.includes('@s.whatsapp.net') ? num : `${num}@s.whatsapp.net`));
 
 				body.mentioned = mentionedNumbers;
 			}

@@ -42,7 +42,7 @@ export async function setTypebot(ef: IExecuteFunctions) {
 				listeningFromMe,
 				stopBotFromMe,
 				keepOpen,
-				debounceTime
+				debounceTime,
 			};
 
 			options = {
@@ -91,7 +91,7 @@ export async function setTypebot(ef: IExecuteFunctions) {
 				debounceTime,
 				triggerType,
 				triggerOperator,
-				triggerValue
+				triggerValue,
 			};
 
 			options = {
@@ -134,7 +134,10 @@ export async function setTypebot(ef: IExecuteFunctions) {
 			const typebot = ef.getNodeParameter('typebot', 0) as string;
 			const remoteJid = ef.getNodeParameter('remoteJid', 0) as string;
 			const startSession = ef.getNodeParameter('startSession', 0) as boolean;
-			const variables = ef.getNodeParameter('variables', 0) as Array<{ name: string; value: string }>;
+			const variables = ef.getNodeParameter('variables', 0) as Array<{
+				name: string;
+				value: string;
+			}>;
 
 			const body = {
 				url,

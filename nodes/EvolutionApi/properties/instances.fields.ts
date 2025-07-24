@@ -40,7 +40,8 @@ export const instancesFields: INodeProperties[] = [
 		type: 'string',
 		default: '',
 
-		description: 'Optional: Number that will be connected to the instance, to receive the pairing code',
+		description:
+			'Optional: Number that will be connected to the instance, to receive the pairing code',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -80,7 +81,8 @@ export const instancesFields: INodeProperties[] = [
 								name: 'msgCall',
 								type: 'string',
 								default: '',
-								description: 'Whether to send a message after rejecting a call, and if so, what message',
+								description:
+									'Whether to send a message after rejecting a call, and if so, what message',
 							},
 							{
 								displayName: 'Ignore Groups',
@@ -226,7 +228,8 @@ export const instancesFields: INodeProperties[] = [
 								displayName: 'Logo URL for Contact in Chatwoot',
 								name: 'chatwootLogo',
 								type: 'string',
-								default: 'https://github.com/user-attachments/assets/4d1e9cd6-377a-4383-820a-9a97e6cfbb63',
+								default:
+									'https://github.com/user-attachments/assets/4d1e9cd6-377a-4383-820a-9a97e6cfbb63',
 								description: 'Enter the logo URL for the contact in Chatwoot',
 							},
 						],
@@ -450,7 +453,8 @@ export const instancesFields: INodeProperties[] = [
 								name: 'webhookByEvents',
 								type: 'boolean',
 								default: false,
-								description: 'Whether to create a route for each event by appending the event name to the end of the URL',
+								description:
+									'Whether to create a route for each event by appending the event name to the end of the URL',
 							},
 							{
 								displayName: 'Base64 in Webhook',

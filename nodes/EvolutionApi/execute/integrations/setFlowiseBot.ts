@@ -44,7 +44,7 @@ export async function setFlowiseBot(ef: IExecuteFunctions) {
 				stopBotFromMe,
 				keepOpen,
 				debounceTime,
-				ignoreJids: ignoreJids || []
+				ignoreJids: ignoreJids || [],
 			};
 
 			options = {
@@ -95,7 +95,7 @@ export async function setFlowiseBot(ef: IExecuteFunctions) {
 				stopBotFromMe,
 				keepOpen,
 				debounceTime,
-				ignoreJids: ignoreJids || []
+				ignoreJids: ignoreJids || [],
 			};
 
 			options = {

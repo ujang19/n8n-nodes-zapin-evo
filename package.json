@@ -39,7 +39,8 @@
       "dist/credentials/EvolutionApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/EvolutionApi/EvolutionApi.node.js"
+      "dist/nodes/EvolutionApi/EvolutionApi.node.js",
+      "dist/nodes/EvolutionApi/EvolutionApiTrigger.node.js"
     ]
   },
   "devDependencies": {

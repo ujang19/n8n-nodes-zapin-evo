@@ -48,7 +48,8 @@ export const groupsFields: INodeProperties[] = [
 		type: 'string' as NodePropertyTypes,
 		default: '',
 		required: true,
-		description: 'Enter participant numbers separated by commas (e.g., 5511999999999,5511888888888)',
+		description:
+			'Enter participant numbers separated by commas (e.g., 5511999999999,5511888888888)',
 		displayOptions: {
 			show: {
 				resource: ['groups-api'],

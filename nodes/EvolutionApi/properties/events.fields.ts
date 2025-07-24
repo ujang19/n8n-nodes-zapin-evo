@@ -73,7 +73,8 @@ export const eventsFields: INodeProperties[] = [
 		name: 'webhookByEvents',
 		type: 'boolean',
 		default: false,
-		description: 'Whether to create a route for each event by appending the event name to the end of the URL',
+		description:
+			'Whether to create a route for each event by appending the event name to the end of the URL',
 		displayOptions: {
 			show: {
 				resource: ['events-api'],

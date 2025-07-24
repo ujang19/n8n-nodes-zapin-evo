@@ -44,7 +44,7 @@ export const chatOperations: INodeProperties = {
 		{
 			name: 'Fetch Profile Picture',
 			action: 'Fetch profile picture',
-			description: 'Gets the URL of a contact\'s profile picture',
+			description: "Gets the URL of a contact's profile picture",
 			value: 'fetch-profile-picture',
 		},
 		{

@@ -39,7 +39,7 @@ export async function sendStories(ef: IExecuteFunctions) {
 			content,
 			backgroundColor,
 			font,
-			allContacts
+			allContacts,
 		};
 
 		// Adds caption only for image or video
@@ -51,9 +51,10 @@ export async function sendStories(ef: IExecuteFunctions) {
 		if (!allContacts) {
 			const statusJidList = ef.getNodeParameter('statusJidList', 0, '') as string;
 			if (statusJidList) {
-				body.statusJidList = statusJidList.split(',')
-					.map(num => num.trim())
-					.map(num => num.includes('@s.whatsapp.net') ? num : `${num}@s.whatsapp.net`);
+				body.statusJidList = statusJidList
+					.split(',')
+					.map((num) => num.trim())
+					.map((num) => (num.includes('@s.whatsapp.net') ? num : `${num}@s.whatsapp.net`));
 			}
 		}
 

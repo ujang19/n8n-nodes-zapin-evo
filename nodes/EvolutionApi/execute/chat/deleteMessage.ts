@@ -20,9 +20,10 @@ export async function deleteMessage(ef: IExecuteFunctions) {
 		const messageId = ef.getNodeParameter('messageId', 0) as string;
 		const fromMe = ef.getNodeParameter('fromMe', 0) as boolean;
 
-		const formattedRemoteJid = remoteJid.includes('@g.us') || remoteJid.includes('@s.whatsapp.net') 
-			? remoteJid 
-			: `${remoteJid}@s.whatsapp.net`;
+		const formattedRemoteJid =
+			remoteJid.includes('@g.us') || remoteJid.includes('@s.whatsapp.net')
+				? remoteJid
+				: `${remoteJid}@s.whatsapp.net`;
 
 		const body: DeleteMessageBody = {
 			id: messageId,
@@ -32,8 +33,8 @@ export async function deleteMessage(ef: IExecuteFunctions) {
 
 		if (!fromMe) {
 			const participant = ef.getNodeParameter('participant', 0) as string;
-			body.participant = participant.includes('@s.whatsapp.net') 
-				? participant 
+			body.participant = participant.includes('@s.whatsapp.net')
+				? participant
 				: `${participant}@s.whatsapp.net`;
 		}
 

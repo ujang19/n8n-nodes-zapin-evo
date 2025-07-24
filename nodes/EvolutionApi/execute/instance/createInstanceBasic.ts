@@ -132,7 +132,8 @@ export async function createInstanceBasic(ef: IExecuteFunctions) {
 				chatwootAccountId: chatwootSettings.chatwootAccountId || '',
 				chatwootToken: chatwootSettings.chatwootToken || '',
 				chatwootUrl: chatwootSettings.chatwootUrl || '',
-				chatwootSignMsg: chatwootSettings.chatwootSignMsg !== undefined ? chatwootSettings.chatwootSignMsg : false,
+				chatwootSignMsg:
+					chatwootSettings.chatwootSignMsg !== undefined ? chatwootSettings.chatwootSignMsg : false,
 			});
 		}
 

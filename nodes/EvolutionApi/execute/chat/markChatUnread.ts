@@ -18,8 +18,8 @@ export async function markChatUnread(ef: IExecuteFunctions) {
 				key: {
 					remoteJid: chat,
 					fromMe,
-					id: messageId
-				}
+					id: messageId,
+				},
 			},
 			chat,
 		};

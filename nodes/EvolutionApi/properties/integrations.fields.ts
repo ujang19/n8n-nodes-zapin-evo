@@ -322,7 +322,8 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'typebotId',
 		type: 'string',
 		default: '',
-		description: 'Enter the ID of the Typebot you want to search for, leave it empty to search for all',
+		description:
+			'Enter the ID of the Typebot you want to search for, leave it empty to search for all',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -554,7 +555,8 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'number',
 		default: 0,
 		required: true,
-		description: 'This is the time the bot will wait for the next messages after receiving a message, then it will join all the messages into one',
+		description:
+			'This is the time the bot will wait for the next messages after receiving a message, then it will join all the messages into one',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -571,7 +573,7 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Recipient\'s RemoteJid',
+		description: "Recipient's RemoteJid",
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -724,7 +726,8 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'evolutionBotId',
 		type: 'string',
 		default: '',
-		description: 'Enter the ID of the Evolution Bot you want to search for, leave it empty to search for all',
+		description:
+			'Enter the ID of the Evolution Bot you want to search for, leave it empty to search for all',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -974,7 +977,7 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Recipient\'s RemoteJid',
+		description: "Recipient's RemoteJid",
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1106,7 +1109,8 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'difyBotId',
 		type: 'string',
 		default: '',
-		description: 'Enter the ID of the Dify you want to search for, leave it empty to search for all',
+		description:
+			'Enter the ID of the Dify you want to search for, leave it empty to search for all',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1357,7 +1361,7 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Recipient\'s RemoteJid',
+		description: "Recipient's RemoteJid",
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1454,7 +1458,8 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'flowiseBotId',
 		type: 'string',
 		default: '',
-		description: 'Enter the ID of the Flowise you want to search for, leave it empty to search for all',
+		description:
+			'Enter the ID of the Flowise you want to search for, leave it empty to search for all',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1568,8 +1573,7 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'string',
 		default: '',
 		required: true,
-		description:
-			'Enter the word/phrase or regex to be used as a trigger to start Flowise',
+		description: 'Enter the word/phrase or regex to be used as a trigger to start Flowise',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1687,7 +1691,8 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'number',
 		default: 0,
 		required: true,
-		description: 'This is the time the bot will wait for the next messages after receiving a message, then it will join all the messages into one',
+		description:
+			'This is the time the bot will wait for the next messages after receiving a message, then it will join all the messages into one',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1704,7 +1709,7 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Recipient\'s RemoteJid',
+		description: "Recipient's RemoteJid",
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1797,5 +1802,5 @@ export const integrationsFields: INodeProperties[] = [
 				resourceForEvolutionBot: ['createEvolutionBot', 'updateEvolutionBot'],
 			},
 		},
-	}
+	},
 ];

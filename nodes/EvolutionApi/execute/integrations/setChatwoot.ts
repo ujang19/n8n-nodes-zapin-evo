@@ -24,7 +24,10 @@ export async function setChatwoot(ef: IExecuteFunctions) {
 			const mergeBrazilContacts = ef.getNodeParameter('chatwootMergeBrazilContacts', 0) as boolean;
 			const importContacts = ef.getNodeParameter('chatwootImportContacts', 0) as boolean;
 			const importMessages = ef.getNodeParameter('chatwootImportMessages', 0) as boolean;
-			const daysLimitImportMessages = ef.getNodeParameter('chatwootDaysLimitImportMessages', 0) as number;
+			const daysLimitImportMessages = ef.getNodeParameter(
+				'chatwootDaysLimitImportMessages',
+				0,
+			) as number;
 			const autoCreate = ef.getNodeParameter('chatwootAutoCreate', 0) as boolean;
 			const organization = ef.getNodeParameter('chatwootOrganization', 0) as string;
 			const logo = ef.getNodeParameter('chatwootLogo', 0) as string;
@@ -46,7 +49,7 @@ export async function setChatwoot(ef: IExecuteFunctions) {
 				autoCreate,
 				organization,
 				logo,
-				ignoreJids: ['']
+				ignoreJids: [''],
 			};
 
 			options = {

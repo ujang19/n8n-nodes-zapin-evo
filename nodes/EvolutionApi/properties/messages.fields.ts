@@ -21,7 +21,7 @@ export const messagesFields: INodeProperties[] = [
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Recipient\'s RemoteJid',
+		description: "Recipient's RemoteJid",
 		displayOptions: {
 			show: {
 				resource: ['messages-api'],
@@ -716,7 +716,8 @@ export const messagesFields: INodeProperties[] = [
 										mentionsEveryOne: [false],
 									},
 								},
-								description: 'Enter the numbers you want to mention separated by commas (e.g., 5511999999999,5511888888888)',
+								description:
+									'Enter the numbers you want to mention separated by commas (e.g., 5511999999999,5511888888888)',
 							},
 						],
 					},
@@ -893,7 +894,8 @@ export const messagesFields: INodeProperties[] = [
 										mentionsEveryOne: [false],
 									},
 								},
-								description: 'Enter the numbers you want to mention separated by commas (e.g., 5511999999999,5511888888888)',
+								description:
+									'Enter the numbers you want to mention separated by commas (e.g., 5511999999999,5511888888888)',
 							},
 						],
 					},
@@ -1175,7 +1177,8 @@ export const messagesFields: INodeProperties[] = [
 										mentionsEveryOne: [false],
 									},
 								},
-								description: 'Enter the numbers you want to mention separated by commas (e.g., 5511999999999,5511888888888)',
+								description:
+									'Enter the numbers you want to mention separated by commas (e.g., 5511999999999,5511888888888)',
 							},
 						],
 					},
@@ -1392,7 +1395,6 @@ export const messagesFields: INodeProperties[] = [
 						name: 'title',
 						type: 'string',
 						default: '',
-
 					},
 					{
 						displayName: 'Rows',
@@ -1428,20 +1430,20 @@ export const messagesFields: INodeProperties[] = [
 										type: 'string',
 										default: '',
 										description: 'Unique option ID',
-									}
-								]
-							}
-						]
-					}
-				]
-			}
+									},
+								],
+							},
+						],
+					},
+				],
+			},
 		],
 		displayOptions: {
 			show: {
 				resource: ['messages-api'],
 				operation: ['send-list'],
 			},
-		}
+		},
 	},
 	{
 		displayName: 'Options',
@@ -1520,7 +1522,8 @@ export const messagesFields: INodeProperties[] = [
 										mentionsEveryOne: [false],
 									},
 								},
-								description: 'Enter the numbers you want to mention separated by commas (e.g., 5511999999999,5511888888888)',
+								description:
+									'Enter the numbers you want to mention separated by commas (e.g., 5511999999999,5511888888888)',
 							},
 						],
 					},
@@ -1901,5 +1904,5 @@ export const messagesFields: INodeProperties[] = [
 				operation: ['send-reaction'],
 			},
 		},
-	}
+	},
 ];

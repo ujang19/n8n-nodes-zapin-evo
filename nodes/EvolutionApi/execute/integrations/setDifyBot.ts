@@ -46,7 +46,7 @@ export async function setDifyBot(ef: IExecuteFunctions) {
 				stopBotFromMe,
 				keepOpen,
 				debounceTime,
-				ignoreJids: ignoreJids || []
+				ignoreJids: ignoreJids || [],
 			};
 
 			options = {
@@ -60,9 +60,7 @@ export async function setDifyBot(ef: IExecuteFunctions) {
 
 			options = {
 				method: 'GET' as IHttpRequestMethods,
-				uri: difyBotId
-					? `/dify/fetch/${difyBotId}/${instanceName}`
-					: `/dify/find/${instanceName}`,
+				uri: difyBotId ? `/dify/fetch/${difyBotId}/${instanceName}` : `/dify/find/${instanceName}`,
 				json: true,
 			};
 		} else if (resourceForDifyBot === 'deleteDify') {
@@ -107,7 +105,7 @@ export async function setDifyBot(ef: IExecuteFunctions) {
 				stopBotFromMe,
 				keepOpen,
 				debounceTime,
-				ignoreJids: ignoreJids || []
+				ignoreJids: ignoreJids || [],
 			};
 
 			options = {
@@ -129,9 +127,9 @@ export async function setDifyBot(ef: IExecuteFunctions) {
 				success: false,
 				error: {
 					message: 'Unrecognized Dify operation',
-						details: 'The requested operation is not valid for the Dify resource',
-						code: 'INVALID_OPERATION',
-						timestamp: new Date().toISOString(),
+					details: 'The requested operation is not valid for the Dify resource',
+					code: 'INVALID_OPERATION',
+					timestamp: new Date().toISOString(),
 				},
 			};
 			throw new NodeOperationError(ef.getNode(), errorData.error.message, {

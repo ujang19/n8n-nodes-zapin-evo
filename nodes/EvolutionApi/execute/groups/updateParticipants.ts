@@ -13,7 +13,7 @@ export async function updateParticipants(ef: IExecuteFunctions) {
 		const action = ef.getNodeParameter('action', 0) as string;
 		const participantsString = ef.getNodeParameter('participants', 0) as string;
 
-		const participants = participantsString.split(',').map(number => number.trim());
+		const participants = participantsString.split(',').map((number) => number.trim());
 
 		const body = {
 			action,

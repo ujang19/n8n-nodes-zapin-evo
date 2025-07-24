@@ -44,7 +44,7 @@ export async function setEvolutionBot(ef: IExecuteFunctions) {
 				stopBotFromMe,
 				keepOpen,
 				debounceTime,
-				ignoreJids: ignoreJids || []
+				ignoreJids: ignoreJids || [],
 			};
 
 			options = {
@@ -95,7 +95,7 @@ export async function setEvolutionBot(ef: IExecuteFunctions) {
 				stopBotFromMe,
 				keepOpen,
 				debounceTime,
-				ignoreJids: ignoreJids || []
+				ignoreJids: ignoreJids || [],
 			};
 
 			options = {
@@ -138,14 +138,14 @@ export async function setEvolutionBot(ef: IExecuteFunctions) {
 				success: false,
 				error: {
 					message: 'Unrecognized Evolution Bot operation',
-						details: 'The requested operation is not valid for the Evolution Bot resource',
-						code: 'INVALID_OPERATION',
-						timestamp: new Date().toISOString(),
+					details: 'The requested operation is not valid for the Evolution Bot resource',
+					code: 'INVALID_OPERATION',
+					timestamp: new Date().toISOString(),
 				},
 			};
 			throw new NodeOperationError(ef.getNode(), errorData.error.message, {
-					message: errorData.error.message,
-					description: errorData.error.details,
+				message: errorData.error.message,
+				description: errorData.error.details,
 			});
 		}
 
@@ -173,8 +173,8 @@ export async function setEvolutionBot(ef: IExecuteFunctions) {
 
 		if (!ef.continueOnFail()) {
 			throw new NodeOperationError(ef.getNode(), error.message, {
-					message: errorData.error.message,
-					description: errorData.error.details,
+				message: errorData.error.message,
+				description: errorData.error.details,
 			});
 		}
 

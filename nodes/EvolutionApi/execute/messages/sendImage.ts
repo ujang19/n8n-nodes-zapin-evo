@@ -66,9 +66,10 @@ export async function sendImage(ef: IExecuteFunctions) {
 				if (mentionsEveryOne) {
 					body.mentionsEveryOne = true;
 				} else if (mentioned) {
-					const mentionedNumbers = mentioned.split(',')
-						.map(num => num.trim())
-						.map(num => num.includes('@s.whatsapp.net') ? num : `${num}@s.whatsapp.net`);
+					const mentionedNumbers = mentioned
+						.split(',')
+						.map((num) => num.trim())
+						.map((num) => (num.includes('@s.whatsapp.net') ? num : `${num}@s.whatsapp.net`));
 
 					body.mentioned = mentionedNumbers;
 				}

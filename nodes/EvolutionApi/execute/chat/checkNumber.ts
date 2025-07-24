@@ -11,7 +11,7 @@ export async function checkNumber(ef: IExecuteFunctions) {
 		const instanceName = ef.getNodeParameter('instanceName', 0) as string;
 		const numbersString = ef.getNodeParameter('numbers', 0) as string;
 
-		const numbers = numbersString.split(',').map(number => number.trim());
+		const numbers = numbersString.split(',').map((number) => number.trim());
 
 		const body = {
 			numbers,
