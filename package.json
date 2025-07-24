@@ -1,6 +1,6 @@
 {
-  "name": "n8n-nodes-evolution-api-eng",
-  "version": "1.0.4",
+  "name": "n8n-nodes-zapin-evo",
+  "version": "1.0.2",
   "description": "Zapin EVO is a channel hub with a focus on WhatsApp (English version)",
   "keywords": [
     "n8n-community-node-package"
