@@ -13,9 +13,8 @@ export class EvolutionApi implements ICredentialType {
 		{
 			displayName: 'Server Url',
 			name: 'server-url',
-			type: 'string',
+			type: 'hidden',
 			default: 'https://api.zapin.tech',
-			hidden: true,
 		},
 		{
 			displayName: 'ApiKey',
