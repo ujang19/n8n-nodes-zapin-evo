@@ -1,8 +1,8 @@
-# Evolution API Trigger Node
+# ZAPIN Trigger Node
 
 ## Overview
 
-Evolution API Trigger adalah node khusus untuk n8n yang memungkinkan Anda menerima event real-time dari Evolution API melalui webhook. Node ini menggunakan pola multiple output, di mana setiap event Evolution API memiliki output port yang terpisah.
+ZAPIN Trigger adalah node khusus untuk n8n yang memungkinkan Anda menerima event real-time dari Evolution API melalui webhook. Node ini menggunakan pola multiple output, di mana setiap event Evolution API memiliki output port yang terpisah.
 
 ## Features
 
@@ -69,7 +69,7 @@ POST /webhook/instance
 
 ### 2. Menggunakan Node di n8n
 
-1. Drag **Evolution API Trigger** node ke workflow Anda
+1. Drag **ZAPIN Trigger** node ke workflow Anda
 2. Copy **Webhook URL** yang ditampilkan di node
 3. Konfigurasi Evolution API instance untuk mengirim event ke URL tersebut
 4. Connect output ports sesuai dengan event yang ingin Anda handle
@@ -77,7 +77,7 @@ POST /webhook/instance
 ### 3. Workflow Example
 
 ```
-Evolution API Trigger
+ZAPIN Trigger
 ├── MESSAGES_UPSERT → Process New Messages
 ├── CONNECTION_UPDATE → Handle Connection Status
 ├── QRCODE_UPDATED → Send QR Code to User

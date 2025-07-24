@@ -8,8 +8,8 @@ import {
 } from 'n8n-workflow';
 
 export const BASE_TRIGGER_DESCRIPTION: INodeTypeBaseDescription = {
-	displayName: 'Evolution API Trigger',
-	name: 'evolutionApiTrigger',
+	displayName: 'ZAPIN Trigger',
+	name: 'zapinTrigger',
 	icon: 'file:evolutionapi.svg',
 	group: ['trigger'],
 	description: 'Handle Evolution API events via a single webhook, and filter events like WAHA Trigger',
@@ -17,7 +17,7 @@ export const BASE_TRIGGER_DESCRIPTION: INodeTypeBaseDescription = {
 
 export const TRIGGER_DESCRIPTION = {
 	defaults: {
-		name: 'Evolution API Trigger',
+		name: 'ZAPIN Trigger',
 	},
 	inputs: [],
 	credentials: [],
@@ -33,7 +33,7 @@ export const TRIGGER_DESCRIPTION = {
 };
 
 export const CONFIGURE_WEBHOOK_NOTE: INodeProperties = {
-	displayName: 'Set Evolution API webhook to this URL: <b>Webhook URL</b>',
+	displayName: 'Set ZAPIN webhook to this URL: <b>Webhook URL</b>',
 	name: 'operation',
 	type: 'notice',
 	typeOptions: { theme: 'info' },
@@ -64,26 +64,26 @@ export function makeWebhookForEvents(events: string[]) {
 		const req = this.getRequestObject();
 		const bodyData = this.getBodyData();
 		const eventType = bodyData.event as string | undefined;
-		
+
 		// Log untuk debugging
 		console.log('=== Evolution API Webhook Received ===');
 		console.log('URL:', req.url);
 		console.log('Event Type:', eventType);
 		console.log('Body:', JSON.stringify(bodyData, null, 2));
 		console.log('=====================================');
-		
+
 		// Jika event tidak didukung -> return kosong
 		if (eventType === undefined || !events.includes(eventType)) {
 			console.log('Event not supported or undefined:', eventType);
 			return {};
 		}
-		
+
 		const eventIndex: number = events.indexOf(eventType);
 		const data = this.helpers.returnJsonArray(req.body as IDataObject);
 		const empty: any[] = [];
 		const workflowData = events.map(() => empty);
 		workflowData[eventIndex] = data;
-		
+
 		console.log('Routing to output index:', eventIndex, 'for event:', eventType);
 		return { workflowData };
 	}

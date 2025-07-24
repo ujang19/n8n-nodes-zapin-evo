@@ -40,7 +40,8 @@
     ],
     "nodes": [
       "dist/nodes/EvolutionApi/EvolutionApi.node.js",
-      "dist/nodes/EvolutionApi/EvolutionApiTrigger.node.js"
+      "dist/nodes/EvolutionApi/EvolutionApiTrigger.node.js",
+      "dist/nodes/EvolutionApi/ZapinMiniTrigger.node.js"
     ]
   },
   "devDependencies": {
