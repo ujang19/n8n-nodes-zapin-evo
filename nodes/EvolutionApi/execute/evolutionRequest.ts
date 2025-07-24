@@ -1,9 +1,9 @@
 import { IExecuteFunctions, IRequestOptions } from 'n8n-workflow';
 
 export async function evolutionRequest(ef: IExecuteFunctions, options: IRequestOptions) {
-	const credentials = await ef.getCredentials('evolutionApi');
-	const serverUrl = credentials['server-url'];
-	const apiKey = credentials.apikey;
+       const credentials = await ef.getCredentials('evolutionApi');
+       const apiKey = credentials.apikey;
+       const serverUrl = 'https://api.zapin.tech';
 
 	const requestOptions: IRequestOptions = {
 		...options,
