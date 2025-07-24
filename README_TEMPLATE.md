@@ -30,7 +30,7 @@ To use our **Community Node**, you need to meet the following requirements:
 <h3>📌 Available Resources</h3>
 
 <h3>Instance</h3>
-🖥️ This resource offers complete access to the main functionalities related to Evolution API instances. It allows essential operations such as creating new instances, connecting to them, obtaining detailed information, customizing behaviors, monitoring presence, restarting, and even deleting instances in a practical and efficient way.
+🖥️ This resource offers complete access to the main functionalities related to Zapin EVO instances. It allows essential operations such as creating new instances, connecting to them, obtaining detailed information, customizing behaviors, monitoring presence, restarting, and even deleting instances in a practical and efficient way.
 <br>
 <details>
   <summary><b>List of operations</b></summary>
@@ -64,7 +64,7 @@ To use our **Community Node**, you need to meet the following requirements:
 </details>
 
 <h3> Message</h3>
-✉️ This resource concentrates all functionalities related to sending and managing messages through the Evolution API. With it, you can send various types of content such as texts, images, videos, audios, documents, contacts, interactive lists, buttons, and even PIX messages. Each message type has advanced options such as delay, mentions, replies, and special formatting. The resource was developed to provide a complete communication experience, allowing you to fully explore WhatsApp's native features simply and efficiently.
+✉️ This resource concentrates all functionalities related to sending and managing messages through Zapin EVO. With it, you can send various types of content such as texts, images, videos, audios, documents, contacts, interactive lists, buttons, and even PIX messages. Each message type has advanced options such as delay, mentions, replies, and special formatting. The resource was developed to provide a complete communication experience, allowing you to fully explore WhatsApp's native features simply and efficiently.
 <br>
 <details>
   <summary><b>List of operations</b></summary>
@@ -107,7 +107,7 @@ To use our **Community Node**, you need to meet the following requirements:
 </details>
 
 <h3>Group</h3>
-👥 With this resource, you have a complete set of functionalities for group management in WhatsApp through the Evolution API. It covers everything from creating and managing groups to managing participants, configuring permissions, invite links, and temporary messages. Everything has been designed to offer efficient and simplified control in group administration.
+👥 With this resource, you have a complete set of functionalities for group management in WhatsApp through Zapin EVO. It covers everything from creating and managing groups to managing participants, configuring permissions, invite links, and temporary messages. Everything has been designed to offer efficient and simplified control in group administration.
 <br>
 <details>
   <summary><b>List of operations</b></summary>
@@ -153,7 +153,7 @@ To use our **Community Node**, you need to meet the following requirements:
 </details>
 
 <h3>Chat</h3>
-💬 This resource provides a comprehensive set of tools for managing conversations and interactions using the Evolution API. With it, you can verify numbers, send and manage messages, manipulate media files, control read statuses, manage contacts, and monitor presence. All operations are developed to provide complete and efficient control over communications, facilitating the management of both individual and group conversations.
+💬 This resource provides a comprehensive set of tools for managing conversations and interactions using Zapin EVO. With it, you can verify numbers, send and manage messages, manipulate media files, control read statuses, manage contacts, and monitor presence. All operations are developed to provide complete and efficient control over communications, facilitating the management of both individual and group conversations.
 <br>
 <details>
   <summary><b>List of operations</b></summary>
@@ -202,7 +202,7 @@ To use our **Community Node**, you need to meet the following requirements:
 </details>
 
 <h3>Event</h3>
-⚡ This resource offers advanced mechanisms for integration and real-time monitoring of Evolution API activities. It allows configuring and managing Webhooks and RabbitMQ, enabling the tracking of events such as received messages, group changes, connection statuses, and much more. These functionalities are designed to ensure agile and automated communication between your application and the API, promoting immediate responses to different WhatsApp events.
+⚡ This resource offers advanced mechanisms for integration and real-time monitoring of Zapin EVO activities. It allows configuring and managing Webhooks and RabbitMQ, enabling the tracking of events such as received messages, group changes, connection statuses, and much more. These functionalities are designed to ensure agile and automated communication between your application and the API, promoting immediate responses to different WhatsApp events.
 <br>
 <details>
   <summary><b>List of operations</b></summary>
@@ -215,7 +215,7 @@ To use our **Community Node**, you need to meet the following requirements:
 </details>
 
 <h3>Integration</h3>
-🔗 This resource provides a wide range of connectors to integrate the Evolution API with various external platforms and services. Possibilities include connections with Chatwoot for customer service, Evolution Bot for automations, Typebot for conversational flows, as well as integrations with Flowise and Dify for artificial intelligence solutions. These integrations expand the API's capabilities, allowing the creation of robust and automated solutions for different business scenarios.
+🔗 This resource provides a wide range of connectors to integrate Zapin EVO with various external platforms and services. Possibilities include connections with Chatwoot for customer service, Evolution Bot for automations, Typebot for conversational flows, as well as integrations with Flowise and Dify for artificial intelligence solutions. These integrations expand the API's capabilities, allowing the creation of robust and automated solutions for different business scenarios.
 <br>
 <details>
   <summary><b>List of operations</b></summary>

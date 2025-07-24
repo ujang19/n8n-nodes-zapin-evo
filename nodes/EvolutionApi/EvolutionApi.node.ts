@@ -10,16 +10,16 @@ import { resourceOperationsFunctions } from './execute';
 
 export class EvolutionApi implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Evolution API',
+               displayName: 'Zapin EVO',
 		name: 'evolutionApi',
 		icon: 'file:evolutionapi.svg',
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"]}}',
-		description: 'Interact with Evolution API',
-		defaults: {
-			name: 'Evolution API',
-		},
+               description: 'Interact with Zapin EVO',
+               defaults: {
+                       name: 'Zapin EVO',
+               },
 		// @ts-ignore
 		inputs: ['main'],
 		// @ts-ignore
